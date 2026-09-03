@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.00
   subtype: lunarLanderFree
-  lastShownTimestamp: 1788379776
+  lastShownTimestamp: 1788466707
   lastUpdateResponse:
     version: 1.00
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1788379777
+  checkedLastUpdateTimestamp: 1788466708
   lastQOTDResponse:
     questionId: 338
     questionText: What will happen on January 19, 2038 at 03:14:07?
@@ -27,7 +27,7 @@ MonoBehaviour:
     answerC: Half-Life 3 release date
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1788379777
+  lastQotdTimestamp: 1788466708
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/summer2025CodeMonkeyBundle_EndsSoon.png
     topText: Get 80% OFF on ALL my Courses and Games!!! (ENDS AUGUST)
@@ -35,11 +35,11 @@ MonoBehaviour:
     bottomText: DONT MISS the latest important trends, sign up for my FREE Weekly
       Newsletter!
     bottomLink: gamedevreport
-  lastDynamicHeaderTimestamp: 1788379777
+  lastDynamicHeaderTimestamp: 1788466708
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1788379777
+  websiteLatestMessageTimestamp: 1788466708
   websiteLatestVideos:
     videos:
     - youTubeId: 8xj9IEFRgKo
@@ -51,4 +51,4 @@ MonoBehaviour:
         that)
     - youTubeId: VZCaQSzsGwU
       title: TOP 10 FREE NEW Assets AUGUST 2026!
-  websiteLatestVideosTimestamp: 1788379777
+  websiteLatestVideosTimestamp: 1788466708
