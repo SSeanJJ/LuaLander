@@ -70,9 +70,9 @@ public class Lander : MonoBehaviour
         {
             default:
             case State.WaitingToStart:
-               if (Keyboard.current.upArrowKey.isPressed ||
-                   Keyboard.current.upArrowKey.isPressed ||
-                   Keyboard.current.upArrowKey.isPressed)
+               if (GameInput.Instance.IsUpActionPressed() ||
+                    GameInput.Instance.IsLeftActionPressed() ||
+                   GameInput.Instance.IsUpActionPressed())
                 {
                     //Pressing Any Input
                     landerRigidbody2D.gravityScale = GRAVITY_NORMAL;
@@ -86,28 +86,28 @@ public class Lander : MonoBehaviour
                     return;
                 }
 
-                if (Keyboard.current.upArrowKey.isPressed ||
-                   Keyboard.current.upArrowKey.isPressed ||
-                   Keyboard.current.upArrowKey.isPressed) {
+                if (GameInput.Instance.IsUpActionPressed() ||
+                    GameInput.Instance.IsLeftActionPressed() ||
+                   GameInput.Instance.IsUpActionPressed()) {
             
                     //Pressing Any Input
                     ConsumeFuel();
                 }
 
-                if (Keyboard.current.upArrowKey.isPressed)
+                if (GameInput.Instance.IsUpActionPressed())
                 {
                     float force = 700f;
                     landerRigidbody2D.AddForce(force * transform.up * Time.deltaTime);
                     OnUpForce?.Invoke(this, EventArgs.Empty);
                 }
-                if (Keyboard.current.leftArrowKey.isPressed)
+                if (GameInput.Instance.IsLeftActionPressed())
                 {
                     float turnSpeed = +100f;
                     landerRigidbody2D.AddTorque(turnSpeed * Time.deltaTime);
                     OnLeftForce?.Invoke(this, EventArgs.Empty);
 
                 }
-                if (Keyboard.current.rightArrowKey.isPressed)
+                if (GameInput.Instance.IsRightActionPressed())
                 {
                     float turnSpeed = -100f;
                     landerRigidbody2D.AddTorque(turnSpeed * Time.deltaTime);

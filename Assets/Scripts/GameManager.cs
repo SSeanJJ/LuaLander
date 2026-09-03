@@ -90,5 +90,3 @@ public class GameManager : MonoBehaviour {
     }
 
 }
-
-//Test for GitHub Fix on Visual Studio
