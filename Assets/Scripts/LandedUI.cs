@@ -53,6 +53,9 @@ public class LandedUI : MonoBehaviour
     private void Show()
     {
         gameObject.SetActive(true);
+        nextButton.Select();
+
+
     }
 
     private void Hide()
