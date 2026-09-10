@@ -10,6 +10,7 @@ public static class SceneLoader {
     } 
 
     public static void LoadScene(Scene scene) {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(scene.ToString());
     } 
 

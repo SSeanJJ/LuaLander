@@ -18,7 +18,7 @@ public class LanderAudio : MonoBehaviour {
 
         SoundManager.Instance.OnSoundVolumeChanged += Instance_OnSoundVolumeChanged;
 
-        // Mute
+        // Creates a method called
         GameManager.Instance.OnGamePaused += Lander_MuteOnPause;
         
 

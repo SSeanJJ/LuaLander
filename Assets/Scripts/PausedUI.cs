@@ -10,6 +10,7 @@ public class PausedUI : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI soundVolumeTextMesh;
     [SerializeField] private Button musicVolumeButton;
     [SerializeField] private TextMeshProUGUI musicVolumeTextMesh;
+    [SerializeField] private Button retryButton;
 
 
 
@@ -27,6 +28,10 @@ public class PausedUI : MonoBehaviour {
         });
         mainMenuButton.onClick.AddListener(() => {
             SceneLoader.LoadScene(SceneLoader.Scene.MainMenuScene);
+        });
+        
+        retryButton.onClick.AddListener(() => {
+            GameManager.Instance.RetryLevel();
         });
 
     }
