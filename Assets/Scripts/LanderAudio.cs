@@ -18,6 +18,10 @@ public class LanderAudio : MonoBehaviour {
 
         SoundManager.Instance.OnSoundVolumeChanged += Instance_OnSoundVolumeChanged;
 
+        // Mute
+        GameManager.Instance.OnGamePaused += Lander_MuteOnPause;
+        
+
         thrusterAudioSource.Pause();
     }
 
@@ -47,6 +51,8 @@ public class LanderAudio : MonoBehaviour {
         thrusterAudioSource.Pause();
     }
 
-
+    private void Lander_MuteOnPause(object sender, System.EventArgs e) {
+        thrusterAudioSource.Pause();
+        }
 
 }

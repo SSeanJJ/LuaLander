@@ -7,7 +7,6 @@ public class SoundManager : MonoBehaviour {
     private const int SOUND_VOLUME_MAX = 10;
     public static SoundManager Instance { get; private set; }
     private static int soundVolume = 6;
-
     public event EventHandler OnSoundVolumeChanged;
 
     [SerializeField] private AudioClip fuelPickupAudioClip;
