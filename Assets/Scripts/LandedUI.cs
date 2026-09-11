@@ -55,11 +55,11 @@ public class LandedUI : MonoBehaviour {
 
     }
     private void Show() {
-        gameObject.SetActive(true);
+        gameObject.SetActive(true); // Refering to the gameobject LandedUI that the script is then attached to 
         nextButton.Select();
     }
 
     private void Hide() {
-        gameObject.SetActive(false);
+        gameObject.SetActive(false); // Refering to the gameobject LandedUI that the script is then attached to 
     }
 }

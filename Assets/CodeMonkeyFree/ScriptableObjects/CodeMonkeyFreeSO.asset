@@ -14,20 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.00
   subtype: lunarLanderFree
-  lastShownTimestamp: 1788977448
+  lastShownTimestamp: 1789140885
   lastUpdateResponse:
     version: 1.00
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1788977448
+  checkedLastUpdateTimestamp: 1789140885
   lastQOTDResponse:
-    questionId: 340
-    questionText: What is the orthographicSize in a 2D camera?
-    answerA: Units visible horizontally
-    answerB: Units visible vertically
-    answerC: Half the units visible horizontally
-    answerD: Half the units visible vertically
+    questionId: 341
+    questionText: What is the difference between Action&lt;float&gt; and Func&lt;float&gt;
+      ?
+    answerA: Both are the same
+    answerB: Action&#60;float&#62; takes float parameter and Func&#60;float&#62;
+      returns float
+    answerC: Func&#60;float&#62; takes float parameter and Action&#60;float&#62;
+      returns float
+    answerD: 
     answerE: 
-  lastQotdTimestamp: 1788977448
+  lastQotdTimestamp: 1789140885
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/humbleSep26Maksym.png
     topText: AWESOME Characters and Weapons 98% OFF! (Modern, Medieval, Fantasy,
@@ -36,13 +39,15 @@ MonoBehaviour:
     bottomText: Escape Tutorial Hell and level up your skills, try my Practice Lab
       for FREE!
     bottomLink: practicelab
-  lastDynamicHeaderTimestamp: 1788977448
+  lastDynamicHeaderTimestamp: 1789140885
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1788977448
+  websiteLatestMessageTimestamp: 1789140885
   websiteLatestVideos:
     videos:
+    - youTubeId: QNXgOuo7-Iw
+      title: TOP 10 FREE NEW Assets SEPTEMBER 2026!
     - youTubeId: xhOkkGbL3mY
       title: How to Make your game look AWESOME! (Unity Lighting and Post Processing
         Tutorial)
@@ -50,6 +55,4 @@ MonoBehaviour:
       title: Unity 6.6 is here and it has 3 MASSIVE IMPROVEMENTS!
     - youTubeId: 8xj9IEFRgKo
       title: THIS is how you go from BEGINNER to ADVANCED!
-    - youTubeId: XJBrzk7PR4o
-      title: DON'T sell your game for $100!
-  websiteLatestVideosTimestamp: 1788977448
+  websiteLatestVideosTimestamp: 1789140885
