@@ -6,6 +6,8 @@ public class MainMenuUI : MonoBehaviour {
 
     [SerializeField] private Button playButton;
     [SerializeField] private Button quitButton;
+    [SerializeField] private Button levelSelectButton;
+
 
 
 
@@ -18,6 +20,12 @@ public class MainMenuUI : MonoBehaviour {
 
         playButton.onClick.AddListener(() => {
             Application.Quit();
+        });
+
+        levelSelectButton.onClick.AddListener(() => {
+            GameManager.ResetStaticData();
+            SceneLoader.LoadScene(SceneLoader.Scene.LevelSelectScene);
+
         });
     }
 

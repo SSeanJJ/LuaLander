@@ -144,5 +144,9 @@ public class GameManager : MonoBehaviour {
         OnGameUnpaused?.Invoke(this, EventArgs.Empty);
     }
 
+    public static void setLevelNumber(int levelNumber) {
+        GameManager.levelNumber = levelNumber;
+    }
+
 }
 
