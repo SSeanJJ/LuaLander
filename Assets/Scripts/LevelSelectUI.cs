@@ -22,6 +22,7 @@ public class LevelSelectUI : MonoBehaviour
         LevelTwoButton.onClick.AddListener(() => {
         GameManager.setLevelNumber(2);
             SceneLoader.LoadScene(SceneLoader.Scene.GameScene);
+
         });
 
     }
