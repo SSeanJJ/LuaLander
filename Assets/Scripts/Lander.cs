@@ -75,7 +75,7 @@ public class Lander : MonoBehaviour
             case State.WaitingToStart:
                if (GameInput.Instance.IsUpActionPressed() ||
                    GameInput.Instance.IsLeftActionPressed() ||
-                   GameInput.Instance.IsUpActionPressed() ||
+                   GameInput.Instance.IsRightActionPressed() ||
                    GameInput.Instance.GetMovementInputVector2() != Vector2.zero) 
                 {
                     //Pressing Any Input
@@ -92,7 +92,7 @@ public class Lander : MonoBehaviour
 
                 if (GameInput.Instance.IsUpActionPressed() ||
                     GameInput.Instance.IsLeftActionPressed() ||
-                    GameInput.Instance.IsUpActionPressed() ||
+                    GameInput.Instance.IsRightActionPressed() ||
                     GameInput.Instance.GetMovementInputVector2() != Vector2.zero) {
                     //Pressing Any Input
                     ConsumeFuel();
@@ -132,7 +132,7 @@ public class Lander : MonoBehaviour
             Debug.Log("Crash!");
             OnLanded?.Invoke(this, new OnLandedEventArgs
             {
-                landingType = LandingType.TooSteepAngle,
+                landingType = LandingType.WrongLandingArea,
                 dotVector = 0f,
                 landingSpeed = 0f,
                 scoreMultiplier = 0,
@@ -151,7 +151,7 @@ public class Lander : MonoBehaviour
             Debug.Log("Landed Too Hard!");
             OnLanded?.Invoke(this, new OnLandedEventArgs
             {
-                landingType = LandingType.TooSteepAngle,
+                landingType = LandingType.TooFastLanding,
                 dotVector = 0f,
                 landingSpeed = relativeVelocityMagnitude,
                 scoreMultiplier = 0,
