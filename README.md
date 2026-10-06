@@ -30,6 +30,12 @@ This would show a fully frozen level with no visible cause in the error list. Mo
 **Added additional retry button to sucessful landing UI.** Previously a single button swapped its label and action using textmesh from "CONTINUE" and "RETRY" depending on the outcome of the level.
 Added a dedicated Retry button to show only when landing is sucessful, to allow the player to achieve a higher score for the level if they wanted to do so. 
 
+**Fixed right input being ignored.** The "any input pressed" checks in ``Lander`` called ``IsUpActionPressed()`` twice and never checked ``IsRightActionPressed()``.
+Pressing right on the keyboard wouldn't start the lander, and turning right didn't consume fuel. Replaced the duplicate with the right action check in both the ``WaitingToStart`` and ``Normal`` states.
+
+**Fixed crash types always reporting "too steep".** Every failed landing raised ``OnLanded`` with ``LandingType.TooSteepAngle``, even when the lander hit terrain or landed too fast.
+Crashes into terrain now report ``WrongLandingArea`` and hard landings report ``TooFastLanding``, so any listener (UI, audio, visuals) receives the real reason.
+
 ## Architecture Notes
 This project is event driven. Managers announce state changes rather than calling depdents directly:
 
