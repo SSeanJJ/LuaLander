@@ -36,6 +36,9 @@ Pressing right on the keyboard wouldn't start the lander, and turning right didn
 **Fixed crash types always reporting "too steep".** Every failed landing raised ``OnLanded`` with ``LandingType.TooSteepAngle``, even when the lander hit terrain or landed too fast.
 Crashes into terrain now report ``WrongLandingArea`` and hard landings report ``TooFastLanding``, so any listener (UI, audio, visuals) receives the real reason.
 
+**Fixed Quit wired to the Play button.** In ``MainMenuUI`` the ``Application.Quit()`` listener was added to ``playButton`` instead of ``quitButton``.
+Because a button runs every listener it has, pressing Play in a build would load the level and quit the game at the same time, while Quit did nothing. This went unnoticed because the Editor ignores ``Application.Quit()``. Moved the listener to ``quitButton``.
+
 ## Architecture Notes
 This project is event driven. Managers announce state changes rather than calling depdents directly:
 
